@@ -1,19 +1,19 @@
 package Perl::Critic::Policy::logicLAB::ProhibitUseLib;
 
-# $Id: ProhibitUseLib.pm 7187 2010-09-05 07:33:49Z jonasbn $
+# $Id: ProhibitUseLib.pm 8128 2013-07-27 18:08:05Z jonasbn $
 
 use strict;
 use warnings;
 use base 'Perl::Critic::Policy';
 use Perl::Critic::Utils qw{ $SEVERITY_MEDIUM };
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 Readonly::Scalar my $EXPL => q{Use PERL5LIB environment instead};
 
 use constant supported_parameters => ();
 use constant default_severity     => $SEVERITY_MEDIUM;
-use constant default_themes       => qw(maintenance);
+use constant default_themes       => qw(logiclab);
 use constant applies_to           => 'PPI::Statement::Include';
 
 sub violates {
@@ -101,7 +101,7 @@ address messy, misleading, buggy and obscuring use of 'use lib'.
 
 Please use Requets Tracker for bug reporting:
 
-    http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-logicLAB-Prohibit-UseLib
+    http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-logicLAB-ProhibitUseLib
 
 =head1 TEST AND QUALITY
 
@@ -134,6 +134,8 @@ See also F<t/perlcriticrc>
 
 =item * L<http://logiclab.jira.com/wiki/display/OPEN/Development#Development-MakeyourComponentsEnvironmentAgnostic>
 
+=item * L<http://logicLAB.jira.com/wiki/display/PCPMPUL/Home>
+
 =back
 
 =head1 AUTHOR
@@ -146,7 +148,7 @@ See also F<t/perlcriticrc>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2009-2010 Jonas B. Nielsen. All rights reserved.
+Copyright (c) 2009-2011 Jonas B. Nielsen. All rights reserved.
 
 This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 

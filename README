@@ -28,11 +28,15 @@ CONFIGURATION AND ENVIRONMENT
     This Policy is not configurable except for the standard options.
 
 DEPENDENCIES AND REQUIREMENTS
-    * Perl::Critic
-    * Perl::Critic::Utils
-    * Readonly
-    * Test::More
-    * Test::Perl::Critic
+    *   Perl::Critic
+
+    *   Perl::Critic::Utils
+
+    *   Readonly
+
+    *   Test::More
+
+    *   Test::Perl::Critic
 
 INCOMPATIBILITIES
     This distribution has no known incompatibilities.
@@ -44,13 +48,14 @@ BUGS AND LIMITATIONS
 BUG REPORTING
     Please use Requets Tracker for bug reporting:
 
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-logicLAB-Prohibit-UseLib
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-logicLAB-ProhibitUseLib
 
 TEST AND QUALITY
     The following policies have been disabled for this distribution
 
-    * Perl::Crititc::Policy::ValuesAndExpressions::ProhibitConstantPragma
-    * Perl::Crititc::Policy::NamingConventions::Capitalization
+    *   Perl::Crititc::Policy::ValuesAndExpressions::ProhibitConstantPragma
+
+    *   Perl::Crititc::Policy::NamingConventions::Capitalization
 
     See also t/perlcriticrc
 
@@ -61,18 +66,20 @@ TEST AND QUALITY
         ...ogicLAB/ProhibitUseLib.pm  100.0   50.0    n/a  100.0  100.0  100.0   95.3
         Total                         100.0   50.0    n/a  100.0  100.0  100.0   95.3
         ---------------------------- ------ ------ ------ ------ ------ ------ ------
-    
+
 SEE ALSO
-    * http://perldoc.perl.org/perlrun.html#ENVIRONMENT
-    *
-    http://logiclab.jira.com/wiki/display/OPEN/Development#Development-Makey
-    ourComponentsEnvironmentAgnostic
+    *   <http://perldoc.perl.org/perlrun.html#ENVIRONMENT>
+
+    *   <http://logiclab.jira.com/wiki/display/OPEN/Development#Development-
+        MakeyourComponentsEnvironmentAgnostic>
+
+    *   <http://logicLAB.jira.com/wiki/display/PCPMPUL/Home>
 
 AUTHOR
-    * Jonas B. Nielsen, jonasbn `<jonasbn@cpan.org>'
+    *   Jonas B. Nielsen, jonasbn "<jonasbn@cpan.org>"
 
 LICENSE AND COPYRIGHT
-    Copyright (c) 2009-2010 Jonas B. Nielsen. All rights reserved.
+    Copyright (c) 2009-2011 Jonas B. Nielsen. All rights reserved.
 
     This program is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
