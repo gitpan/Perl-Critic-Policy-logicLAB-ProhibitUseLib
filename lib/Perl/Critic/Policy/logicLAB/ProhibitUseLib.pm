@@ -1,13 +1,14 @@
 package Perl::Critic::Policy::logicLAB::ProhibitUseLib;
 
-# $Id: ProhibitUseLib.pm 8128 2013-07-27 18:08:05Z jonasbn $
+# $Id$
 
 use strict;
 use warnings;
 use base 'Perl::Critic::Policy';
 use Perl::Critic::Utils qw{ $SEVERITY_MEDIUM };
+use 5.008; #5.8.0
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 Readonly::Scalar my $EXPL => q{Use PERL5LIB environment instead};
 
@@ -50,7 +51,7 @@ This policy is a policy in the L<Perl::Critic::logicLAB> distribution.
 
 =head1 VERSION
 
-This documentation describes version 0.01
+This documentation describes version 0.03
 
 =head1 DESCRIPTION
 
@@ -64,14 +65,14 @@ Instead use the environment variable PERL5LIB
 
     #bash
     export PERL5LIB='/some/path/some/where'
-    
+
     #tcsh and csh
     setenv PERL5LIB '/some/path/some/where'
 
 =head1 CONFIGURATION AND ENVIRONMENT
 
 This Policy is not configurable except for the standard options.
-    
+
 =head1 DEPENDENCIES AND REQUIREMENTS
 
 =over
@@ -125,7 +126,7 @@ See also F<t/perlcriticrc>
     ...ogicLAB/ProhibitUseLib.pm  100.0   50.0    n/a  100.0  100.0  100.0   95.3
     Total                         100.0   50.0    n/a  100.0  100.0  100.0   95.3
     ---------------------------- ------ ------ ------ ------ ------ ------ ------
-    
+
 =head1 SEE ALSO
 
 =over
@@ -148,7 +149,7 @@ See also F<t/perlcriticrc>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2009-2011 Jonas B. Nielsen. All rights reserved.
+Copyright (c) 2009-2014 Jonas B. Nielsen. All rights reserved.
 
 This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 

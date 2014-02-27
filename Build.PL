@@ -1,6 +1,6 @@
 # Build.PL for Perl::Critic::JONASBN
 
-# $Id: Build.PL 7185 2010-09-05 07:32:14Z jonasbn $
+# $Id$
 
 use strict;
 use Module::Build;
@@ -13,18 +13,20 @@ my $build = Module::Build->new(
     create_makefile_pl   => 'traditional',
     create_readme        => 1,
     dist_abstract        => q[simple policy prohibiting the use of 'use lib'],
+    configure_requires => { 'Module::Build' => 0.40 },
     requires => {
         'Perl::Critic'        => '0',
         'Perl::Critic::Utils' => '0',
         'Readonly'            => '0',
         'Test::More'          => '0',
         'Test::Perl::Critic'  => '0',
+        'perl'                => '5.8.0',
     },
     meta_merge => {
         resources => {
             homepage => 'http://logiclab.jira.com/wiki/display/PCPMPUL/Home',
-            bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-logicLAB-Prohibit-UseLib',
-            repository => 'http://logicLAB.jira.com/svn/PCPMPUL',
+            bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Perl-Critic-Poilcy-logicLAB-Prohibit-UseLib',
+            repository => 'https://github.com/jonasbn/pcpmpul',
             ProjectChangelog =>
                 'http://logiclab.jira.com/browse/PCPMPUL#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel',
             ProjectSite => 'http://logicLAB.jira.com/browse/PCPMPUL',

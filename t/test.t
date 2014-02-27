@@ -1,5 +1,5 @@
 
-# $Id: test.t 7171 2010-09-04 06:59:17Z jonasbn $
+# $Id$
 
 use strict;
 use warnings;
